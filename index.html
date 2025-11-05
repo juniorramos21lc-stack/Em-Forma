@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Meu App Saúde</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>Meu App Saúde</h1>
+  <nav>
+    <button id="btn-exercicios" class="active">Exercícios</button>
+    <button id="btn-dieta">Dieta</button>
+    <button id="btn-monetizacao">Monetização</button>
+  </nav>
+</header>
+
+<main>
+  <section id="exercicios-section" class="active">
+    <h2>Lista de Exercícios</h2>
+    <form id="exercicio-form">
+      <input type="text" id="input-exercicio" placeholder="Adicionar exercício..." />
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="exercicios-list"></ul>
+  </section>
+
+  <section id="dieta-section">
+    <h2>Acompanhamento da Dieta</h2>
+    <form id="dieta-form">
+      <input type="text" id="input-alimento" placeholder="Alimento" required />
+      <input type="number" id="input-calorias" placeholder="Calorias" required min="0" />
+      <button type="submit">Registrar</button>
+    </form>
+    <ul id="dieta-list"></ul>
+    <p>Total Calorias: <span id="total-calorias">0</span> kcal</p>
+  </section>
+
+  <section id="monetizacao-section">
+    <h2>Ajude a Manter o App</h2>
+    <p>Se gostou do app, considere fazer uma doação para manter nosso trabalho.</p>
+    <button id="btn-doar-paypal">Doar via PayPal</button>
+    <button id="btn-doar-patreon">Doar via Patreon</button>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
